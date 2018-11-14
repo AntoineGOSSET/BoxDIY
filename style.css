@@ -1,4 +1,3 @@
-
 .container-fluid{
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -27,4 +26,12 @@
 
 .full-width-row {
     overflow-x: hidden;
+}
+
+.page-footer {
+    /* background-color: brown; */
+}
+
+.footer-list {
+    list-style-type: none;
 }
