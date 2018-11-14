@@ -1,9 +1,21 @@
+@font-face {
+    font-family: 'impact_label'; /*a name to be used later*/
+    src: url('font/impact_label/Impact\ Label.ttf'); /*URL to font*/
+  }
+  @font-face {
+    font-family: 'amethyst'; /*a name to be used later*/
+    src: url('font/amethyst/Amethyst.ttf'); /*URL to font*/
+  }
+
 .container-fluid{
     padding-left: 0 !important;
     padding-right: 0 !important;
     overflow: hidden;
 }
-
+#main-title{
+    font-family: amethyst;
+    font-size: 55px;
+}
 #details{
     padding: 40px;
     background-color: lightgrey
@@ -12,9 +24,13 @@
 #concept{
     padding: 40px;
 }
-
+#carouselExampleFade{
+    margin-top: 90px
+}
 .navbar {
     height: 4em;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 90px
 }
 
 .navbar-brand {
@@ -62,6 +78,10 @@ p.italic{
 
 .btn-buy{
     width: 180px;
+}
+
+h2{
+    font-family: impact_label !important;
 }
 
 /* =================================== */
