@@ -1,10 +1,8 @@
-.row{
-    margin: 10px
-}
 
 .container-fluid{
     padding-left: 0 !important;
-    padding-right: 0 !important
+    padding-right: 0 !important;
+    overflow: hidden;
 }
 
 .MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
@@ -15,3 +13,37 @@
 .MultiCarousel .leftLst { left:0; }
 .MultiCarousel .rightLst { right:0; }
 .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+
+#details{
+    padding: 40px;
+    background-color: lightgrey
+}
+
+#concept{
+    padding: 40px;
+}
+
+.navbar {
+    height: 4em;
+}
+
+.navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+
+.full-width-row {
+    overflow-x: hidden;
+}
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    border: none !important
+}
+
+.card-img-top{
+    border-radius: 140px !important;
+}
