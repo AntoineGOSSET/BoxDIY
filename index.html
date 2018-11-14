@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 
-<link rel="stylesheet" media="screen" type="text/css" href="style.css" />
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+<link rel="stylesheet" media="screen" type="text/css" href="style.css" />
 
 <head>
+
+    <script src="jquery-3.3.1.min.js"></script>
     <title>UCrafty</title>
 </head>
 
@@ -21,9 +24,15 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="img/Carousel/HOME_LGG_1500x.jpg" alt="Commande du mois">
+                    <div class="carousel-caption d-none d-md-block">
+                        <button type="button" class="btn btn-primary btn-buy">Acheter</button>
+                    </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="img/Carousel/HOME2_LGG_1500x.jpg" alt="Précommande">
+                    <div class="carousel-caption d-none d-md-block">
+                        <button type="button" class="btn btn-primary btn-buy">Précommander</button>
+                    </div>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -36,16 +45,12 @@
             </a>
         </div>
 
-<<<<<<< HEAD
-        <div class="row">
-=======
         <!-- Concept -->
         <div class="row" id="concept">
 
->>>>>>> 6d8a06e642bf55407395dc5667f8eaee2b2fc49b
             <div class="col-3 text-center">
                 <img src="img/icon/petite-entreprise.png" width="50" height="50" alt="">
-                <h3>Passer votre commande</h3>
+                <h3>Passez votre commande</h3>
                 <p>Chaque mois commandez votre boxe thématique</p>
             </div>
 
@@ -93,70 +98,37 @@
 
         <!-- Anciennes box -->
         <div class="text-center" style="font-size: 50px;">Nos box précédentes</div>
-        <!-- Attention, les images sont en 349x323, 349x233, 350x233 -->
-        <div class="row">
-            <!-- <div class="col-md-12">
-                <div class="carousel slide multi-item-carousel" id="theCarousel">
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="col-xs-4"><a href="#1"><img src="img/Box précédentes/echarpefondbleu_350X.jpg" class="img-responsive"></a></div>
+
+        <div class="container text-center my-3" id="oldbox">
+            <div class="row mx-auto my-auto">
+                <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block col-4 img-fluid" src="img/Carousel/HOME2_LGG_1500x.jpg">
                         </div>
-                        <div class="item">
-                            <div class="col-xs-4"><a href="#1"><img src="img/Box précédentes/MEN-SOCIETY_350X.jpg" class="img-responsive"></a></div>
+                        <div class="carousel-item">
+                            <img class="d-block col-4 img-fluid" src="img/Box précédentes/MEN-SOCIETY_350X.jpg">
                         </div>
-                        <div class="item">
-                            <div class="col-xs-4"><a href="#1"><img src="img/Box précédentes/MontreKomonoLaboxHomme_350X.jpg" class="img-responsive"></a></div>
+                        <div class="carousel-item">
+                            <img class="d-block col-4 img-fluid" src="img/Box précédentes/Montre2KomonoLaboxHomme_350X.jpg">
                         </div>
-                        <div class="item">
-                            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/673ab7/000000" class="img-responsive"></a></div>
-                        </div>
-                        <div class="item">
-                            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/4caf50/000000" class="img-responsive"></a></div>
-                        </div>
-                        <div class="item">
-                            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
-                        </div>
-                        <div class="item">
-                            <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
+                        <div class="carousel-item">
+                            <img class="d-block col-4 img-fluid" src="img/Box précédentes/echarpefondbleu2_350X.jpg">
                         </div>
                     </div>
-                    <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                    <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                </div>
-            </div> -->
-            <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel" data-interval="1000">
-                <div class="MultiCarousel-inner">
-                    <div class="item">
-                        <div class="pad15">
-                            <div class="col-xs-4"><a href="#1"><img src="img/Box précédentes/echarpefondbleu_350X.jpg"
-                                        class="img-responsive"></a></div>
-                        </div>
-                        <div class="pad15">
-                            <div class="col-xs-4"><a href="#1"><img src="img/Box précédentes/MEN-SOCIETY_350X.jpg"
-                                        class="img-responsive"></a></div>
-                        </div>
-                        <div class="pad15">
-                            <div class="col-xs-4"><a href="#1"><img src="img/Box précédentes/MontreKomonoLaboxHomme_350X.jpg"
-                                        class="img-responsive"></a></div>
-                        </div>
-                        <div class="pad15">
-                            <div class="col-xs-4"><a href="#1"><img src="img/Box précédentes/echarpefondbleu2_350X.jpg"
-                                        class="img-responsive"></a></div>
-                        </div>
-                        <div class="pad15">
-                            <div class="col-xs-4"><a href="#1"><img src="img/Box précédentes/MEN2-SOCIETY_350X.jpg"
-                                        class="img-responsive"></a></div>
-                        </div>
-                        <div class="pad15">
-                            <div class="col-xs-4"><a href="#1"><img src="img/Box précédentes/Montre2KomonoLaboxHomme_350X.jpg"
-                                        class="img-responsive"></a></div>
-                        </div>
-                    </div>
+                    <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-
+    <!-- Footer -->
     <footer class="page-footer font-small blue pt-4">
         <div class="row">
             <div class="col-6">
@@ -166,13 +138,13 @@
             <div class="col-6">
                 <ul class="footer-list">
                     <li>
-                        <a href="" >Qui sommes-nous</a>
+                        <a href="quisommesnous.html">Qui sommes-nous</a>
                     </li>
                     <li>
-                        <a href="" >Conditions générales</a>
+                        <a href="">Conditions générales</a>
                     </li>
                     <li>
-                        <a href="" >Nous contacter</a>
+                        <a href="">Nous contacter</a>
                     </li>
                 </ul>
             </div>
@@ -185,6 +157,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
 
     <script src="app.js"></script>
 

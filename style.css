@@ -4,15 +4,6 @@
     overflow: hidden;
 }
 
-.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
-.MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
-.MultiCarousel .MultiCarousel-inner .item { float: left;}
-.MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
-.MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
-.MultiCarousel .leftLst { left:0; }
-.MultiCarousel .rightLst { right:0; }
-.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
-
 #details{
     padding: 40px;
     background-color: lightgrey
@@ -53,3 +44,51 @@
 .card-img-top{
     border-radius: 140px !important;
 }
+
+.title{
+    margin-top: 40px;
+    margin-bottom: 30px
+}
+
+p.italic{
+    font-style: italic;
+    color: darkgrey
+}
+
+.carousel-caption {
+    top: 70%;
+    left: 50% !important;
+}
+
+.btn-buy{
+    width: 180px;
+}
+
+/* =================================== */
+/* Carousel pour les anciennes box */
+
+#oldbox .carousel-inner .carousel-item-right.active,
+#oldbox .carousel-inner .carousel-item-next {
+  transform: translateX(33.33%);
+}
+
+#oldbox .carousel-inner .carousel-item-left.active, 
+#oldbox .carousel-inner .carousel-item-prev {
+  transform: translateX(-33.33%)
+}
+  
+#oldbox .carousel-inner .carousel-item-right,
+#oldbox .carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+#oldbox .d-block{
+    display: inline !important;
+}
+
+#oldbox .img-fluid{
+    width: 33%;
+    height: 33%;
+}
+
+/* =================================== */
