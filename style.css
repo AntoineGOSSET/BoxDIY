@@ -1,3 +1,8 @@
-h1{
-    background-color: blue;
+.row{
+    margin: 10px
+}
+
+.container-fluid{
+    padding-left: 0 !important;
+    padding-right: 0 !important
 }
