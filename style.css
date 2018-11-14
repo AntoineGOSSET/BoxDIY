@@ -1,7 +1,8 @@
 
 .container-fluid{
     padding-left: 0 !important;
-    padding-right: 0 !important
+    padding-right: 0 !important;
+    overflow: hidden;
 }
 
 #details{
@@ -11,4 +12,19 @@
 
 #concept{
     padding: 40px;
+
+}
+
+.navbar {
+    height: 4em;
+}
+
+.navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+
+.full-width-row {
+    overflow-x: hidden;
 }
