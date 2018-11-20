@@ -4,6 +4,14 @@
 
 Site web du projet Y-Days pour les box mensuelles YNOV-Nantes :thumbsup:
 
+## Fait 20/11 :
+- Page Acceuil :
+  - Ajout instagram en bas de la page
+  - Animation apparition sur certaines div
+  - Formulaire d'achat qui écrit dans un google doc :
+    https://docs.google.com/spreadsheets/d/137-3GddpAj9eKiHLXVsGBuN1-4P9WavSatPphixx-kc/edit?usp=sharing
+  - Début de responsive
+  
 ## Fait 14/11 :
 - Page Acceuil :
   - Carousel ( 2 frame box en cours et précommande prochaine box)
@@ -20,12 +28,10 @@ Site web du projet Y-Days pour les box mensuelles YNOV-Nantes :thumbsup:
 
 - Page Acceuil :
   - Ajouter des boutons pour la navigation dans la nav bar
-  - Lier les boutons au formulaire
   - Footer
   
 - Page formulaire :
-  - Créer un formulaire pour l'achat et précommande d'une box
-  - Intégrer Paypal si possible (à confirmer)
+  - Intégrer Paypal un captcha
 
 - Page Qui sommes nous ? :
   - Récuperer les photos de tous le mondes
