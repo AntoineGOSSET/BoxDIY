@@ -65,7 +65,13 @@
     margin-top: 40px;
     margin-bottom: 30px
 }
-
+#confirmAlert{
+    margin-top: 90px;
+    display: none
+}
+#confimrtext{
+    display: inline
+}
 p.italic{
     font-style: italic;
     color: darkgrey
@@ -73,7 +79,7 @@ p.italic{
 
 .carousel-caption {
     top: 70%;
-    left: 50% !important;
+    left: 50%;
 }
 
 .btn-buy{
@@ -88,8 +94,24 @@ h2{
     width: 100%;
     height: 100%;
 }
+#price{
+    display: block;
+}
+.form-content{
+    margin: 10px
+}
 
+#mySubmit{
+    margin-top: 10px
+}
 
+#imgCommande{
+    margin-bottom: 20px
+}
+
+#quantitySelector{
+    margin-bottom: 40%
+}
 /* =================================== */
 /* Carousel pour les anciennes box */
 
@@ -133,4 +155,12 @@ h2{
 
 .hideme{
     opacity:0;
+}
+
+@media screen and (max-width: 600px) {
+    .carousel-caption {
+        top: 50%;
+        right: 15%;
+        left: 15%;
+    }
 }

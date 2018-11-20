@@ -88,7 +88,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
   var recipient = button.data('whatever')
   var commandtype = button.data('type')
-  var datedispo= button.data('date') // Extract info from data-* attributes
+  var datedispo = button.data('date') // Extract info from data-* attributes
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
   var modal = $(this)
@@ -97,6 +97,37 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   if (datedispo) {
     modal.find('.modal-body p').text('Disponnible à partir du ' + datedispo)
   }
-  
-
 })
+
+
+function priceCalcul() {
+  var x = document.getElementById("quantitySelector").value;
+  document.getElementById("price").innerHTML = "TOTAL : " + x * 10 + '€';
+}
+
+
+$(document).ready(function () {
+  // References:
+  var $form = $('#myForm');
+  var $conf = $('#confimrtext');
+  var $subm = $('#mySubmit');
+  var $impt = $form.find(':input').not(':button, :submit, :reset, :hidden');
+  // Submit function:
+  $form.submit(function () {
+    $.post($(this).attr('action'), $(this).serialize(), function (response) {
+      // On success, clear all inputs;
+      $impt.val('').attr('value', '').removeAttr('checked').removeAttr('selected');
+      // Write a confirmation message:
+      jQuery("#exampleModal").modal("hide");
+      $conf.html("Merci de votre commande !" );
+      document.getElementById('confirmAlert').style.display = 'block';
+
+    }, 'json');
+    return false;
+  });
+});
+function closeAlert() {
+  document.getElementById('confirmAlert').style.display = 'none';
+}    
+
+
