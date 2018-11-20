@@ -5,7 +5,7 @@
 Site web du projet Y-Days pour les box mensuelles YNOV-Nantes :thumbsup:
 
 ## Fait 20/11 :
--Page Acceuil :
+- Page Acceuil :
   - Ajout instagram en bas de la page
   - Animation apparition sur certaines div
   - Formulaire d'achat qui écrit dans un google doc :
