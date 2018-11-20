@@ -44,7 +44,7 @@
 }
 
 .page-footer {
-    /* background-color: brown; */
+    background-color: black;
 }
 
 .footer-list {
@@ -84,17 +84,23 @@ h2{
     font-family: impact_label !important;
 }
 
+#visubox{
+    width: 100%;
+    height: 100%;
+}
+
+
 /* =================================== */
 /* Carousel pour les anciennes box */
 
 #oldbox .carousel-inner .carousel-item-right.active,
 #oldbox .carousel-inner .carousel-item-next {
-  transform: translateX(33.33%);
+  transform: translateX(33%);
 }
 
 #oldbox .carousel-inner .carousel-item-left.active, 
 #oldbox .carousel-inner .carousel-item-prev {
-  transform: translateX(-33.33%)
+  transform: translateX(-33%)
 }
   
 #oldbox .carousel-inner .carousel-item-right,
@@ -107,8 +113,24 @@ h2{
 }
 
 #oldbox .img-fluid{
-    width: 33%;
+    width:  33%;
     height: 33%;
 }
 
+#oldbox{
+    width: 100%;
+    max-width: unset;
+}
+
+
 /* =================================== */
+
+.appear{
+    opacity:0;
+    position: relative;
+    top: 30px;
+  }
+
+.hideme{
+    opacity:0;
+}
