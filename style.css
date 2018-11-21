@@ -41,6 +41,11 @@
     background-color: rgba(255, 255, 255, 0.97);
     height: 90px
 }
+#outerDiv{
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+}
 
 .navbar-brand {
     transform: translateX(-50%);
@@ -192,6 +197,17 @@ footer a:hover
         transform: translateX(-50%);
         left: 50%;
         position: absolute;
+    }
+}
+@media screen and (max-width: 992px) {
+    .navbar-nav{
+        background-color: rgba(255, 255, 255, 0.97);
+    }
+
+    #logo-title{
+        width: 140px;
+        height: auto;
+        margin-top: 35px;
     }
 }
 @media screen and (max-width: 576px) {

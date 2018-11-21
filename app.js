@@ -99,6 +99,10 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   if (datedispo) {
     modal.find('.modal-body p').text('Disponnible à partir du ' + datedispo)
   }
+  modal.find('img').attr('src','img/box_precedentes/'+recipient+'.jpg')
+
+
+  
 })
 
 /* =================================== */
