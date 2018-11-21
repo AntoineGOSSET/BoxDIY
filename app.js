@@ -84,7 +84,9 @@ $(document).ready(function () {
 
 /* =================================== */
 
+/* Modal */
 $('#exampleModal').on('show.bs.modal', function (event) {
+  document.getElementById('loading-register').style.display = 'none';
   var button = $(event.relatedTarget) // Button that triggered the modal
   var recipient = button.data('whatever')
   var commandtype = button.data('type')
@@ -99,12 +101,14 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   }
 })
 
-
+/* =================================== */
+/* Calcul du prix total */
 function priceCalcul() {
   var x = document.getElementById("quantitySelector").value;
   document.getElementById("price").innerHTML = "TOTAL : " + x * 10 + '€';
 }
-
+/* =================================== */
+/* Formulaire achat/reservation */
 
 $(document).ready(function () {
   // References:
@@ -114,6 +118,7 @@ $(document).ready(function () {
   var $impt = $form.find(':input').not(':button, :submit, :reset, :hidden');
   // Submit function:
   $form.submit(function () {
+    document.getElementById('loading-register').style.display = 'block';
     $.post($(this).attr('action'), $(this).serialize(), function (response) {
       // On success, clear all inputs;
       $impt.val('').attr('value', '').removeAttr('checked').removeAttr('selected');
@@ -129,5 +134,6 @@ $(document).ready(function () {
 function closeAlert() {
   document.getElementById('confirmAlert').style.display = 'none';
 }    
+/* =================================== */
 
 

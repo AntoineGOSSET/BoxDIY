@@ -12,15 +12,24 @@
     padding-right: 0 !important;
     overflow: hidden;
 }
+#logo-title{
+    width: 170px;
+    height: auto;
+    margin-top: 60px;
+}
 #main-title{
     font-family: amethyst;
     font-size: 55px;
 }
 #details{
-    padding: 40px;
     background-color: lightgrey
 }
-
+#feed-insta{
+    margin-bottom: 50px
+}
+#space-logo{
+    padding-right: 240px
+}
 #concept{
     padding: 40px;
 }
@@ -29,7 +38,7 @@
 }
 .navbar {
     height: 4em;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.97);
     height: 90px
 }
 
@@ -38,7 +47,12 @@
     left: 50%;
     position: absolute;
 }
-
+.garantie{
+    padding: 20px
+}
+#footer-div{
+    padding-bottom: 80px
+}
 .full-width-row {
     overflow-x: hidden;
 }
@@ -101,7 +115,8 @@ h2{
     display: block;
 }
 .form-content{
-    margin: 10px
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #mySubmit{
@@ -111,10 +126,20 @@ h2{
 #imgCommande{
     margin-bottom: 20px
 }
-
-#quantitySelector{
-    margin-bottom: 40%
+.on-dark{
+    color: bisque;
 }
+
+footer a {
+        color: white;
+    }
+    
+footer a:hover 
+    {
+        color:whitesmoke;    
+    }
+
+
 /* =================================== */
 /* Carousel pour les anciennes box */
 
@@ -140,13 +165,16 @@ h2{
 #oldbox .img-fluid{
     width:  33%;
     height: 33%;
+    padding-right: 0;
+    padding-left: 0
 }
 
 #oldbox{
     width: 100%;
+    padding-right: 0;
+    padding-left: 0;
     max-width: unset;
 }
-
 
 /* =================================== */
 
@@ -159,11 +187,84 @@ h2{
 .hideme{
     opacity:0;
 }
-
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 992px) {
+    .navbar-nav{
+        transform: translateX(-50%);
+        left: 50%;
+        position: absolute;
+    }
+}
+@media screen and (max-width: 576px) {
     .carousel-caption {
         top: 50%;
         right: 15%;
         left: 15%;
     }
+
+    #oldbox .img-fluid{
+        width:  100%;
+        height: auto;
+        padding-bottom: 10px
+    
+    }
+
+
+
+    #oldbox .carousel-inner .carousel-item-right.active,
+#oldbox .carousel-inner .carousel-item-next {
+  transform: translateY(33%);
 }
+
+#oldbox .carousel-inner .carousel-item-left.active, 
+#oldbox .carousel-inner .carousel-item-prev {
+  transform: translateY(-33%)
+}
+  
+#oldbox .carousel-inner .carousel-item-right,
+#oldbox .carousel-inner .carousel-item-left{ 
+  transform: translateY(0);
+}
+}
+
+
+
+/* =================================== */
+/* Loading animation */
+
+#loading-register{
+    display: none
+}
+.load-wrapp {
+    float: left;
+    width: 100px;
+    height: 55px;
+    margin: 0;
+    padding: 20px 20px 20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.load-wrapp p {padding: 0 0 20px;}
+.load-wrapp:last-child {margin-right: 0;}
+
+.line {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #4b9cdb;
+}
+
+/* Animate the stuff */
+
+.load-3 .line:nth-last-child(1) {animation: loadingC .6s .1s linear infinite;}
+.load-3 .line:nth-last-child(2) {animation: loadingC .6s .2s linear infinite;}
+.load-3 .line:nth-last-child(3) {animation: loadingC .6s .3s linear infinite;}
+
+@keyframes loadingC {
+    0 {transform: translate(0,0);}
+    50% {transform: translate(0,15px);}
+    100% {transform: translate(0,0);}
+}
+/* =================================== */
