@@ -51,6 +51,7 @@
     transform: translateX(-50%);
     left: 50%;
     position: absolute;
+    z-index: 3;
 }
 .garantie{
     padding: 20px
@@ -86,7 +87,8 @@
 }
 #confirmAlert{
     margin-top: 90px;
-    display: none
+    display: none;
+    z-index: 1;
 }
 .first_element{
     margin-top: 90px
@@ -269,7 +271,7 @@ footer a:hover
     width: 15px;
     height: 15px;
     border-radius: 15px;
-    background-color: #4b9cdb;
+    background-color: #bb5d11;
 }
 
 /* Animate the stuff */
