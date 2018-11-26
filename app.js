@@ -22,7 +22,7 @@ $('#oldbox .carousel .carousel-item').each(function () {
 /* Instagram feed*/
 $(window).on('load', function () {
   $.instagramFeed({
-    'username': 'ucrafty_ynov',
+    'username': 'ucrafty_company',
     'container': "#instagram-feed-demo",
     'items': 8,
     'display_biography': false,
@@ -109,7 +109,8 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 /* Calcul du prix total */
 function priceCalcul() {
   var x = document.getElementById("quantitySelector").value;
-  document.getElementById("price").innerHTML = "TOTAL : " + x * 10 + '€';
+  console.log(x * 19.99 )
+  document.getElementById("price").innerHTML = "TOTAL : " + x * 19.99 + '€';
 }
 /* =================================== */
 /* Formulaire achat/reservation */

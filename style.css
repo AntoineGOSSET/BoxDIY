@@ -1,11 +1,16 @@
 @font-face {
     font-family: 'impact_label'; /*a name to be used later*/
-    src: url('font/impact_label/Impact\ Label.ttf'); /*URL to font*/
+    src: url('font/impact_label/Impact\ Label\ Reversed.ttf'); /*URL to font*/
   }
-  @font-face {
-    font-family: 'amethyst'; /*a name to be used later*/
-    src: url('font/amethyst/Amethyst.ttf'); /*URL to font*/
-  }
+@font-face {
+font-family: 'amethyst'; /*a name to be used later*/
+src: url('font/amethyst/Amethyst.ttf'); /*URL to font*/
+}
+
+@font-face{
+    font-family: 'sedgwick';
+    src: url('font/SedgwickAve-Regular.ttf')
+}
 
 .container-fluid{
     padding-left: 0 !important;
@@ -15,14 +20,14 @@
 #logo-title{
     width: 170px;
     height: auto;
-    margin-top: 60px;
+    padding-top: 60px;
 }
 #main-title{
     font-family: amethyst;
     font-size: 55px;
 }
 #details{
-    background-color: lightgrey
+    background-color: #E0EDF6
 }
 #feed-insta{
     margin-bottom: 50px
@@ -64,11 +69,16 @@
 }
 
 .page-footer {
-    background-color: black;
+    /* background-color: #010e17; */
+    background-color: lightgray
 }
 
 .footer-list {
     list-style-type: none;
+}
+.detail-title{
+    padding-top: 10px;
+    width: 100%;
 }
 .card {
     margin: 0 auto; /* Added */
@@ -91,7 +101,7 @@
     z-index: 1;
 }
 .first_element{
-    margin-top: 90px
+    margin-top: 135px
 }
 #confimrtext{
     display: inline
@@ -110,13 +120,13 @@ p.italic{
     width: 180px;
 }
 
-h2{
-    font-family: impact_label !important;
+h1{
+    font-family: sedgwick !important;
 }
 
 #visubox{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 #price{
     display: block;
@@ -134,7 +144,7 @@ h2{
     margin-bottom: 20px
 }
 .on-dark{
-    color: bisque;
+    color: #0772b8;
 }
 
 footer a {
@@ -209,7 +219,7 @@ footer a:hover
     #logo-title{
         width: 140px;
         height: auto;
-        margin-top: 35px;
+        padding-top: 35px;
     }
 }
 @media screen and (max-width: 576px) {
