@@ -12,6 +12,11 @@ src: url('font/amethyst/Amethyst.ttf'); /*URL to font*/
     src: url('font/SedgwickAve-Regular.ttf')
 }
 
+@font-face{
+    font-family: 'opificio';
+    src: url('font/opificio/Opificio_Bold_rounded.ttf')
+}
+
 .container-fluid{
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -121,7 +126,7 @@ p.italic{
 }
 
 h1{
-    font-family: sedgwick !important;
+    font-family: opificio !important;
 }
 
 #visubox{
