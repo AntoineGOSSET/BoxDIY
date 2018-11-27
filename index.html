@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
 <link rel="stylesheet" media="screen" type="text/css" href="style.css" />
@@ -15,7 +14,7 @@
     <div class="container-fluid">
         <nav class="navbar  navbar-expand-lg navbar-light fixed-top">
             <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" class="text-center" id="logo-title" width="130" height="130" alt="">
+                <img src="img/logo.png" class="text-center" id="logo-title" width="130" height="130" alt="Ucrafty_logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -26,13 +25,11 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="index.html">Acceuil</a>
-                    <a class="nav-item nav-link" href="quisommesnous.html" id="space-logo">A propos</a>
+                    <a class="nav-item nav-link" href="quisommesnous.html" id="space-logo">A-propos</a>
                     <a class="nav-item nav-link" href="#">Guides</a>
                     <a class="nav-item nav-link" href="condition.html">Conditions</a>
                 </div>
             </div>
-
-
         </nav>
 
         <div class="alert alert-success fixed-top" id="confirmAlert" role="alert">
@@ -43,7 +40,6 @@
         </div>
         <!-- Carousel -->
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="img/Carousel/HOME_LGG_1500x.jpg" alt="Commande du mois">
@@ -73,30 +69,28 @@
         <!-- Concept -->
         <h1 class="text-center title">Concept</h1>
         <div class="row justify-content-center" id="concept">
-
             <div class="col-sm-6 col-lg-2 text-center appear" data-delai="100">
-                <img src="img/icon/petite-entreprise.png" width="50" height="50" alt="">
+                <img src="img/icon/petite-entreprise.png" width="50" height="50" alt="Commande">
                 <h3>Passez votre commande</h3>
                 <p>Chaque mois commandez votre box thématique</p>
             </div>
 
             <div class="col-sm-6 col-lg-2 text-center appear" data-delai="500">
-                <img src="img/icon/package.png" width="50" height="50" alt="">
+                <img src="img/icon/package.png" width="50" height="50" alt="Livraison">
                 <h3>Recevez votre box</h3>
                 <p>Vous serez averti lorsque votre box sera disponnible sur le campus</p>
             </div>
 
             <div class="col-sm-6 col-lg-2 text-center appear" data-delai="900">
-                <img src="img/icon/hammer.png" width="50" height="50" alt="">
+                <img src="img/icon/hammer.png" width="50" height="50" alt="Craftez">
                 <h3>Craftez</h3>
                 <p>Grâce aux tutoriels réalisez les différents objets de la box</p>
             </div>
 
             <div class="col-sm-6 col-lg-2 text-center appear" data-delai="1300">
-                <img src="img/icon/skydiving.png" width="50" height="50" alt="">
+                <img src="img/icon/skydiving.png" width="50" height="50" alt="Fun">
                 <h3>HAVE FUN</h3>
             </div>
-
         </div>
     </div>
 
@@ -126,27 +120,28 @@
                 risus augue. Sed in lectus erat. Suspendisse gravida rhoncus ex eget pulvinar. Mauris sed lacus ut
                 leo
                 luctus luctus. Aenean scelerisque nunc varius, ultricies diam accumsan, porta urna.</p>
-
+            <div id="buy-btn-2">
+                <button type="button" class="btn btn-primary btn-buy" data-toggle="modal" data-target="#exampleModal"
+                    data-whatever="Décembre" data-type="Acheter">Acheter</button>
+            </div>
         </div>
-
     </div>
-
 
     <!-- Garanties -->
     <div class="container-fluid">
         <div class="row justify-content-center" id="details">
             <div class="col-sm-3 text-center garantie">
-                <img src="img/icon/camion.png" width="50" height="50" alt="">
+                <img src="img/icon/camion.png" width="50" height="50" alt="Livraison">
                 <h3>Livraison sur votre campus</h3>
             </div>
 
             <div class="col-sm-3 text-center garantie">
-                <img src="img/icon/cadenas.png" width="50" height="50" alt="">
+                <img src="img/icon/cadenas.png" width="50" height="50" alt="Paiment">
                 <h3>Paiment sécurisé</h3>
             </div>
             <div class="col-sm-3 text-center garantie">
-                <img src="img/icon/discuter.png" width="50" height="50" alt="">
-                <h3>FAQ</h3>
+                <img src="img/icon/discuter.png" width="50" height="50" alt="Aide">
+                <h3>Aide gratuite</h3>
             </div>
         </div>
     </div>
@@ -160,22 +155,22 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <a href="">
-                            <img class="d-block col-sm-4 img-fluid" src="img/box_precedentes/sold_out.jpg">
+                            <img class="d-block col-sm-4 img-fluid blur-img" src="img/box_precedentes/sold_out.jpg" alt="ancienne box 1" onmouseout="blurImg(this)" onmouseover="normalImg(this)">
                         </a>
                     </div>
                     <div class="carousel-item">
                         <a href="">
-                            <img class="d-block col-sm-4 img-fluid" src="img/box_precedentes/sold_out2.jpg">
+                            <img class="d-block col-sm-4 img-fluid blur-img" src="img/box_precedentes/sold_out2.jpg" alt="ancienne box 2" onmouseout="blurImg(this)" onmouseover="normalImg(this)">
                         </a>
                     </div>
                     <div class="carousel-item">
                         <a href="">
-                            <img class="d-block col-sm-4 img-fluid" src="img/box_precedentes/sold_out.jpg">
+                            <img class="d-block col-sm-4 img-fluid blur-img" src="img/box_precedentes/sold_out3.jpg" alt="ancienne box 3" onmouseout="blurImg(this)" onmouseover="normalImg(this)">
                         </a>
                     </div>
                     <div class="carousel-item">
                         <a href="">
-                            <img class="d-block col-sm-4 img-fluid" src="img/box_precedentes/sold_out2.jpg">
+                            <img class="d-block col-sm-4 img-fluid blur-img" src="img/box_precedentes/sold_out4.jpg" alt="ancienne box 4" onmouseout="blurImg(this)" onmouseover="normalImg(this)">
                         </a>
                     </div>
                 </div>
@@ -187,18 +182,16 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
-
             </div>
         </div>
     </div>
-
 
     <!-- Instagram -->
     <h1 class="text-center title">#Ucrafty</h1>
     <p class="italic text-center">sur Instagram <a href="https://instagram.com/ucrafty_company">@Ucrafty</a></p>
 
     <div class="row justify-content-center" id="feed-insta">
-        <div class="col-sm-9">
+        <div class="col-sm-11 col-md-9">
             <div id="instagram-feed-demo" class="instagram_feed"></div>
         </div>
     </div>
@@ -206,12 +199,13 @@
     <!-- Footer -->
     <footer class="page-footer font-small blue pt-4">
         <div class="row justify-content-around" id="footer-div">
-            <div class="col-sm-5 garantie">
+            <div class="col-sm-6 garantie">
                 <h4 class="on-dark">Nos réseaux</h4>
-                <a href=""><img src="./img/icon/facebook_basique.png" width="50" height="50"></a>
-                <a href="https://www.instagram.com/ucrafty_company/"><img src="./img/icon/instagram_basique.png" width="50" height="50"></a>
-                <a href=""><img src="./img/icon/pinterest_basique.png" width="50" height="50"></a>
-                <a href=""><img src="./img/icon/youtube_basique.png" width="50" height="50"></a>
+                <a href=""><img src="./img/icon/facebook_basique.png" width="50" height="50" alt="facebook"></a>
+                <a href="https://www.instagram.com/ucrafty_company/"><img src="./img/icon/instagram_basique.png" width="50"
+                        height="50" alt="instagram"></a>
+                <a href=""><img src="./img/icon/pinterest_basique.png" width="50" height="50"alt="pinterest"></a>
+                <a href=""><img src="./img/icon/youtube_basique.png" width="50" height="50" alt="youtube"></a>
             </div>
             <div class="col-sm-5 garantie">
                 <h4 class="on-dark">En savoir plus</h4>
@@ -223,7 +217,7 @@
                         <a href="condition.html">Conditions générales</a>
                     </li>
                     <li>
-                        <a href="mailto:ucrafty@gmail.com">Nous contacter</a>
+                        <a href="mailto:ucrafty.ynov@gmail.com">Nous contacter</a>
                     </li>
                 </ul>
             </div>
@@ -250,12 +244,9 @@
                         </div>
                         <p class="italic"></p>
 
-
-
                         <div class="row">
                             <div class="col-sm-9 text-center" id="imgCommande"><img src="img/box_precedentes/box_mystere.png"
-                                    width="80%"></div>
-
+                                    width="80%" alt="box"></div>
                             <div class="col-sm-3 text-center form-content" id="quantitypicker">
                                 <label for="exampleFormControlSelect1">Quantité</label>
                                 <select class="form-control" id="quantitySelector" name="quantite" onchange="priceCalcul()">
@@ -264,11 +255,7 @@
                                     <option>3</option>
                                     <option>4</option>
                                 </select>
-
-
                             </div>
-
-
                         </div>
 
                         <div class="row ">
@@ -293,11 +280,10 @@
                                         générales</a> </label>
                             </div>
 
-
                             <div class="col-md-4">
                                 <strong class="bold text-right form-content" id="price">TOTAL : 19.99€</strong>
                                 <div class="text-right">
-                                    <button type="submit" id="mySubmit" class="btn btn-secondary">Confirmer</button>
+                                    <button type="submit" id="mySubmit" class="btn btn-primary">Confirmer</button>
                                     <div class="col text-center load-wrapp">
                                         <div class="load-3" id="loading-register">
                                             <div class="line"></div>
@@ -309,8 +295,6 @@
                             </div>
                         </div>
                     </form>
-
-
                 </div>
             </div>
         </div>
@@ -323,12 +307,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-
     <script src="jquery.instagramFeed.min.js"></script>
     <script src="jquery.serialize-object.min.js"></script>
     <script src="app.js"></script>
 
-
 </body>
-
 </html>

@@ -1,12 +1,3 @@
-@font-face {
-    font-family: 'impact_label'; /*a name to be used later*/
-    src: url('font/impact_label/Impact\ Label\ Reversed.ttf'); /*URL to font*/
-  }
-@font-face {
-font-family: 'amethyst'; /*a name to be used later*/
-src: url('font/amethyst/Amethyst.ttf'); /*URL to font*/
-}
-
 @font-face{
     font-family: 'sedgwick';
     src: url('font/SedgwickAve-Regular.ttf')
@@ -26,6 +17,9 @@ src: url('font/amethyst/Amethyst.ttf'); /*URL to font*/
     width: 170px;
     height: auto;
     padding-top: 60px;
+}
+.btn-primary{
+    background-color:  #0772b8 
 }
 #main-title{
     font-family: amethyst;
@@ -125,6 +119,13 @@ p.italic{
     width: 180px;
 }
 
+#buy-btn-2{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
 h1{
     font-family: opificio !important;
 }
@@ -198,6 +199,10 @@ footer a:hover
     max-width: unset;
 }
 
+.blur-img{
+    filter: blur(6px)
+}
+
 /* =================================== */
 
 .appear{
@@ -217,14 +222,23 @@ footer a:hover
     }
 }
 @media screen and (max-width: 992px) {
+
+    .nav-item{
+        padding-left: 20px !important;
+    }
     .navbar-nav{
         background-color: rgba(255, 255, 255, 0.97);
     }
-
+    #outerDiv{
+        margin-top: 20px
+    }
     #logo-title{
         width: 140px;
         height: auto;
         padding-top: 35px;
+    }
+    .blur-img{
+        filter: blur(0px) !important
     }
 }
 @media screen and (max-width: 576px) {
@@ -241,9 +255,7 @@ footer a:hover
     
     }
 
-
-
-    #oldbox .carousel-inner .carousel-item-right.active,
+#oldbox .carousel-inner .carousel-item-right.active,
 #oldbox .carousel-inner .carousel-item-next {
   transform: translateY(33%);
 }
@@ -258,7 +270,6 @@ footer a:hover
   transform: translateY(0);
 }
 }
-
 
 
 /* =================================== */
@@ -286,7 +297,7 @@ footer a:hover
     width: 15px;
     height: 15px;
     border-radius: 15px;
-    background-color: #bb5d11;
+    background-color: #a2cae4;
 }
 
 /* Animate the stuff */
