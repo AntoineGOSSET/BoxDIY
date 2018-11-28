@@ -18,13 +18,28 @@ $('#oldbox .carousel .carousel-item').each(function () {
     $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
   }
 });
+
+/* Mouse over pour le carousel */
+
+function blurImg(x) {
+  x.style.filter = "blur(6px)";
+}
+
+function normalImg(x) {
+  x.style.filter = "blur(0px)";
+}
+
+
+
+
 /* =================================== */
 /* Instagram feed*/
 $(window).on('load', function () {
   $.instagramFeed({
     'username': 'ucrafty_company',
     'container': "#instagram-feed-demo",
-    'items': 8,
+    'items_per_row': 3,
+    'items': 6,
     'display_biography': false,
     'display_profile': false
   });
