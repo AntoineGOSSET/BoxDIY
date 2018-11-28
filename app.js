@@ -1,5 +1,6 @@
 /* =================================== */
 /* Carousel pour les anciennes box */
+
 $('#recipeCarousel').carousel({
   interval: 10000
 })
@@ -132,6 +133,7 @@ function priceCalcul() {
 
 $(document).ready(function () {
   // References:
+
   var $form = $('#myForm');
   var $conf = $('#confimrtext');
   var $subm = $('#mySubmit');
@@ -158,7 +160,6 @@ function closeAlert() {
 
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  console.log(currentScrollPos)
   if (currentScrollPos == 0) {
     document.getElementById("logo-title").style.width = "160px";
     document.getElementById("logo-title").style.padding = "60px 0px 0px 0px";
