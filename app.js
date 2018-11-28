@@ -141,4 +141,16 @@ function closeAlert() {
 }    
 /* =================================== */
 
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  console.log(currentScrollPos)
+  if (currentScrollPos == 0) {
+    document.getElementById("logo-title").style.width = "160px";
+    document.getElementById("logo-title").style.padding = "60px 0px 0px 0px";
+  } else {
+    document.getElementById("logo-title").style.width = "95px";
+    document.getElementById("logo-title").style.padding = "0px";
+  }
+  prevScrollpos = currentScrollPos;
+} 
 

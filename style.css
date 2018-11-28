@@ -23,9 +23,10 @@ src: url('font/amethyst/Amethyst.ttf'); /*URL to font*/
     overflow: hidden;
 }
 #logo-title{
-    width: 170px;
+    width: 160px;
     height: auto;
     padding-top: 60px;
+    transition: 0.3s;
 }
 #main-title{
     font-family: amethyst;
@@ -222,9 +223,10 @@ footer a:hover
     }
 
     #logo-title{
-        width: 140px;
+        width: 134px;
         height: auto;
         padding-top: 35px;
+        transition: top 0.3s !important;
     }
 }
 @media screen and (max-width: 576px) {
@@ -301,3 +303,7 @@ footer a:hover
     100% {transform: translate(0,0);}
 }
 /* =================================== */
+
+.containerCustom{
+	margin:0px 10%;
+}
