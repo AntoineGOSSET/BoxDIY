@@ -148,7 +148,7 @@ $(document).ready(function () {
       jQuery("#exampleModal").modal("hide");
       $conf.html("Merci de votre commande !" );
       document.getElementById('confirmAlert').style.display = 'block';
-
+      sendMail();
     }, 'json');
     return false;
   });
@@ -170,3 +170,18 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 } 
 
+// Send mail after command
+function sendMail() {
+  console.log("coucou");
+  var emailAdress = document.getElementById("inputEmail").value;
+  var lastname = document.getElementById("lastname").value;
+  var firstname = document.getElementById("firstname").value;
+  Email.send("confirmation-commande@ucrafty.fr",
+    emailAdress,
+    "Confirmation de votre réservation",
+    "Merci de votre commande.",
+    {token :"9fc2379c-19e3-4774-9114-35549842763e"}
+  );
+  alert("sent");
+  console.log("done");
+};
