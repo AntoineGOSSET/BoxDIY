@@ -157,7 +157,7 @@ function closeAlert() {
   document.getElementById('confirmAlert').style.display = 'none';
 }    
 /* =================================== */
-
+/* Animations changement taille logo */
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (currentScrollPos == 0) {
