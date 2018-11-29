@@ -265,6 +265,12 @@ footer a:hover
         padding-bottom: 10px
     
     }
+    #logo-title{
+        width: 130px;
+        height: auto;
+        padding-top: 30px;
+        transition: 0.3s;
+    }
 
 #oldbox .carousel-inner .carousel-item-right.active,
 #oldbox .carousel-inner .carousel-item-next {
