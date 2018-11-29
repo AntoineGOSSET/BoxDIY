@@ -14,9 +14,10 @@
     overflow: hidden;
 }
 #logo-title{
-    width: 170px;
+    width: 160px;
     height: auto;
     padding-top: 60px;
+    transition: 0.3s;
 }
 .btn-primary{
     background-color:  #0772b8 
@@ -233,9 +234,10 @@ footer a:hover
         margin-top: 20px
     }
     #logo-title{
-        width: 140px;
+        width: 134px;
         height: auto;
         padding-top: 35px;
+        transition: top 0.3s !important;
     }
     .blur-img{
         filter: blur(0px) !important
@@ -312,3 +314,7 @@ footer a:hover
     100% {transform: translate(0,0);}
 }
 /* =================================== */
+
+.containerCustom{
+	margin:0px 10%;
+}

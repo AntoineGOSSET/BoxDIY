@@ -1,4 +1,4 @@
-# BoxDIY :gift:
+# BoxDIY :package:
 
 ## Description
 
