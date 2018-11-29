@@ -10,8 +10,8 @@
 
 html, body {
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 ! important;
 }
 
 .container-fluid{
@@ -244,14 +244,12 @@ footer a:hover
     #outerDiv{
         margin-top: 20px
     }
-    #logo-title{
-        width: 134px;
-        height: auto;
-        padding-top: 35px;
-        transition: top 0.3s !important;
-    }
     .blur-img{
         filter: blur(0px) !important
+    }
+
+    #checkBox_validation{
+        margin-left: 1px
     }
 }
 @media screen and (max-width: 576px) {
