@@ -1,6 +1,6 @@
 @font-face{
-    font-family: 'sedgwick';
-    src: url('font/SedgwickAve-Regular.ttf')
+    font-family: 'coolvetica';
+    src: url('font/coolvetica.ttf')
 }
 
 @font-face{
@@ -132,7 +132,7 @@ p.italic{
 }
 
 h1{
-    font-family: opificio !important;
+    font-family: coolvetica !important;
 }
 
 #visubox{
