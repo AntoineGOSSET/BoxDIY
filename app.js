@@ -115,17 +115,17 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   if (datedispo) {
     modal.find('.modal-body p').text('Disponnible à partir du ' + datedispo)
   }
-  modal.find('img').attr('src','img/box_precedentes/'+recipient+'.jpg')
+  modal.find('img').attr('src', 'img/box_precedentes/' + recipient + '.jpg')
 
 
-  
+
 })
 
 /* =================================== */
 /* Calcul du prix total */
 function priceCalcul() {
   var x = document.getElementById("quantitySelector").value;
-  console.log(x * 19.99 )
+  console.log(x * 19.99)
   document.getElementById("price").innerHTML = "TOTAL : " + x * 19.99 + '€';
 }
 /* =================================== */
@@ -146,7 +146,7 @@ $(document).ready(function () {
       $impt.val('').attr('value', '').removeAttr('checked').removeAttr('selected');
       // Write a confirmation message:
       jQuery("#exampleModal").modal("hide");
-      $conf.html("Merci de votre commande !" );
+      $conf.html("Merci de votre commande !");
       document.getElementById('confirmAlert').style.display = 'block';
       sendMail();
     }, 'json');
@@ -155,20 +155,28 @@ $(document).ready(function () {
 });
 function closeAlert() {
   document.getElementById('confirmAlert').style.display = 'none';
-}    
+}
 /* =================================== */
-
-window.onscroll = function() {
+/* Animations changement taille logo */
+window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (currentScrollPos == 0) {
-    document.getElementById("logo-title").style.width = "160px";
-    document.getElementById("logo-title").style.padding = "60px 0px 0px 0px";
-  } else {
+    if (screen.width < 576) {
+      document.getElementById("logo-title").style.width = "130px";
+      document.getElementById("logo-title").style.padding = "30px 0px 0px 0px";
+    }
+    else {
+      document.getElementById("logo-title").style.width = "160px";
+      document.getElementById("logo-title").style.padding = "60px 0px 0px 0px";
+    }
+
+  }
+  else {
     document.getElementById("logo-title").style.width = "95px";
     document.getElementById("logo-title").style.padding = "0px";
   }
   prevScrollpos = currentScrollPos;
-} 
+}
 
 // Send mail after command
 function sendMail() {
