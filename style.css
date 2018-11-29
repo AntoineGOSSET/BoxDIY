@@ -57,6 +57,11 @@ html, body {
     align-items: center !important;
     flex-wrap: wrap !important;
 }
+.outerDiv{
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+}
 
 .navbar-brand {
     transform: translateX(-50%);
@@ -331,4 +336,23 @@ footer a:hover
 }
 .card-header .collapsed .fa {
   transform: rotate(90deg);
+}
+
+/* Conteneur Youtube */
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
