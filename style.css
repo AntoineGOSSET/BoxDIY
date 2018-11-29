@@ -242,6 +242,10 @@ footer a:hover
     .blur-img{
         filter: blur(0px) !important
     }
+
+    #checkBox_validation{
+        margin-left: 1px
+    }
 }
 @media screen and (max-width: 576px) {
     .carousel-caption {
