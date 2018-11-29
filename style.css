@@ -1,6 +1,6 @@
 @font-face{
-    font-family: 'sedgwick';
-    src: url('font/SedgwickAve-Regular.ttf')
+    font-family: 'coolvetica';
+    src: url('font/coolvetica.ttf')
 }
 
 @font-face{
@@ -8,8 +8,10 @@
     src: url('font/opificio/Opificio_Bold_rounded.ttf')
 }
 
-body {
+html, body {
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .container-fluid{
@@ -132,7 +134,7 @@ p.italic{
 }
 
 h1{
-    font-family: opificio !important;
+    font-family: coolvetica !important;
 }
 
 #visubox{
