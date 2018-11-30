@@ -125,8 +125,41 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 /* Calcul du prix total */
 function priceCalcul() {
   var x = document.getElementById("quantitySelector").value;
-  console.log(x * 19.99)
-  document.getElementById("price").innerHTML = "TOTAL : " + x * 19.99 + '€';
+  switch (x) {
+    case "1":
+      document.getElementById("price").innerHTML = "TOTAL : 19.99 €";
+      break;
+    case "2":
+      document.getElementById("price").innerHTML = "TOTAL : 39.98 €";
+      break;
+    case "3":
+      document.getElementById("price").innerHTML = "TOTAL : 59.97 €";
+      break;
+    case "4":
+      document.getElementById("price").innerHTML = "TOTAL : 79.96 €";
+      break;
+    case "5":
+      document.getElementById("price").innerHTML = "TOTAL : 99.95 €";
+      break;
+    case "6":
+      document.getElementById("price").innerHTML = "TOTAL : 119.94 €";
+      break;
+    case "7":
+      document.getElementById("price").innerHTML = "TOTAL : 139.93 €";
+      break;
+    case "8":
+      document.getElementById("price").innerHTML = "TOTAL : 159.92 €";
+      break;
+    case "9":
+      document.getElementById("price").innerHTML = "TOTAL : 179.91 €";
+      break;
+    case "10":
+      document.getElementById("price").innerHTML = "TOTAL : 199.90 €";
+      break;
+    default:
+      break;
+  }
+  
 }
 /* =================================== */
 /* Formulaire achat/reservation */
@@ -180,7 +213,6 @@ window.onscroll = function () {
 
 // Send mail after command
 function sendMail() {
-  console.log("coucou");
   var emailAdress = document.getElementById("inputEmail").value;
   var lastname = document.getElementById("lastname").value;
   var firstname = document.getElementById("firstname").value;
@@ -190,6 +222,4 @@ function sendMail() {
     "Merci de votre commande.",
     {token :"9fc2379c-19e3-4774-9114-35549842763e"}
   );
-  alert("sent");
-  console.log("done");
 };
