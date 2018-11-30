@@ -168,7 +168,7 @@ $(document).ready(function () {
   // References:
 
   var $form = $('#myForm');
-  var $conf = $('#confimrtext');
+  var $conf = $('#confirmtext');
   var $subm = $('#mySubmit');
   var $impt = $form.find(':input').not(':button, :submit, :reset, :hidden');
   // Submit function:
@@ -179,16 +179,29 @@ $(document).ready(function () {
       $impt.val('').attr('value', '').removeAttr('checked').removeAttr('selected');
       // Write a confirmation message:
       jQuery("#exampleModal").modal("hide");
-      $conf.html("Merci de votre commande !");
-      document.getElementById('confirmAlert').style.display = 'block';
+      $conf.html("Merci de votre commande ! Un mail de confirmation vous a été envoyé, pensez à vérifier dans vos courriers indésirables.");
+      
       sendMail();
     }, 'json');
+    document.getElementById('confirmAlert').style.display = 'block';
+    $("#confirmAlert").fadeTo(5000, 500).slideUp(500, function(){
+      $("#confirmAlert").alert('close');
+    });
     return false;
   });
+  // document.getElementById('confirmAlert').setTimeout(function() { (document.getElementById('confirmAlert').style.display = 'none'), 5000 });
+  // window.setTimeout(function() {
+  //   $("#confirmAlert").fadeTo(2000, 0).slideUp(2000, function(){
+  //       $("#confirmAlert").alert('close'); 
+  //   });
+  // }, 5000);
+  
 });
+
 function closeAlert() {
   document.getElementById('confirmAlert').style.display = 'none';
 }
+
 /* =================================== */
 /* Animations changement taille logo */
 window.onscroll = function () {
