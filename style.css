@@ -249,9 +249,9 @@ footer a:hover
         filter: blur(0px) !important
     }
 
-    #checkBox_validation{
+    /* #checkBox_validation{
         margin-left: 1px
-    }
+    } */
 }
 @media screen and (max-width: 576px) {
     .carousel-caption {
