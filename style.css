@@ -207,6 +207,10 @@ footer a:hover
     filter: blur(6px)
 }
 
+.garantie{
+    padding: 20px
+}
+
 /* =================================== */
 
 .appear{
@@ -250,6 +254,8 @@ footer a:hover
         right: 15%;
         left: 15%;
     }
+
+
 
     #oldbox .img-fluid{
         width:  100%;
@@ -377,4 +383,27 @@ footer a{
     min-width: 200px;
     flex-wrap: wrap;
     text-align: center;
+}
+
+/*============== Page guide box ======= */
+
+.boxImg{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+}
+
+.imgTuto{
+    border-radius: 5%
+}
+.minSizeImg{
+    min-width: 210px;
+    padding: 0
+}
+
+@media screen and (max-width: 767px) {
+    .imgIsRight{
+        order: 2;
+    }
 }

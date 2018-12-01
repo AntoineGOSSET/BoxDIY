@@ -179,7 +179,7 @@ $(document).ready(function () {
       $impt.val('').attr('value', '').removeAttr('checked').removeAttr('selected');
       // Write a confirmation message:
       jQuery("#exampleModal").modal("hide");
-      $conf.html("Merci de votre commande ! Un mail de confirmation vous a été envoyé, pensez à vérifier dans vos courriers indésirables.");
+      $conf.html("Merci de votre commande ! Un mail de confirmation vous a été envoyé (pensez à vérifier dans vos courriers indésirable).");
       
       sendMail();
     }, 'json');
