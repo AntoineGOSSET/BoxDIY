@@ -31,7 +31,7 @@ html, body {
     transition: 0.3s;
 }
 .btn-primary{
-    background-color:  #0772b8 
+    background-color:  #0772b8
 }
 #main-title{
     font-family: amethyst;
@@ -81,7 +81,7 @@ html, body {
 
 .page-footer {
     /* background-color: #010e17; */
-    background-color: lightgray
+    background-color: #bab1b0
 }
 
 .detail-title{
@@ -165,10 +165,10 @@ h1{
 footer a {
         color: white;
     }
-    
-footer a:hover 
+
+footer a:hover
     {
-        color:whitesmoke;    
+        color:whitesmoke;
     }
 
 
@@ -180,13 +180,13 @@ footer a:hover
   transform: translateX(33%);
 }
 
-#oldbox .carousel-inner .carousel-item-left.active, 
+#oldbox .carousel-inner .carousel-item-left.active,
 #oldbox .carousel-inner .carousel-item-prev {
   transform: translateX(-33%)
 }
-  
+
 #oldbox .carousel-inner .carousel-item-right,
-#oldbox .carousel-inner .carousel-item-left{ 
+#oldbox .carousel-inner .carousel-item-left{
   transform: translateX(0);
 }
 
@@ -266,7 +266,7 @@ footer a:hover
         width:  100%;
         height: auto;
         padding-bottom: 10px
-    
+
     }
     #logo-title{
         width: 130px;
@@ -280,13 +280,13 @@ footer a:hover
   transform: translateY(33%);
 }
 
-#oldbox .carousel-inner .carousel-item-left.active, 
+#oldbox .carousel-inner .carousel-item-left.active,
 #oldbox .carousel-inner .carousel-item-prev {
   transform: translateY(-33%)
 }
-  
+
 #oldbox .carousel-inner .carousel-item-right,
-#oldbox .carousel-inner .carousel-item-left{ 
+#oldbox .carousel-inner .carousel-item-left{
   transform: translateY(0);
 }
 }
@@ -354,8 +354,8 @@ footer a:hover
 	overflow: hidden;
 }
 
-.video-container iframe,  
-.video-container object,  
+.video-container iframe,
+.video-container object,
 .video-container embed {
 	position: absolute;
 	top: 0;
@@ -378,7 +378,7 @@ footer div{
 }
 
 footer img{
-    width: 50px; 
+    width: 50px;
     height: 50px;
     margin: 20px 15px 0px 15px;
 }
