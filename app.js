@@ -116,11 +116,13 @@ $('#exampleModal').on('show.bs.modal', function (event) {
     modal.find('.modal-body p').text('Disponnible à partir du ' + datedispo)
   }
   modal.find('img').attr('src', 'img/box_precedentes/' + recipient + '.jpg')
-
-
-
 })
 
+function OnMonthChange() {
+  var x = document.getElementById("month-list").value;
+  console.log('img/box_precedentes/' + x + '.jpg')
+  document.getElementById("imgBoxMonth").src = ('img/box_precedentes/' + x + '.jpg')
+}
 /* =================================== */
 /* Calcul du prix total */
 function priceCalcul() {
@@ -159,7 +161,7 @@ function priceCalcul() {
     default:
       break;
   }
-  
+
 }
 /* =================================== */
 /* Formulaire achat/reservation */
@@ -180,11 +182,11 @@ $(document).ready(function () {
       // Write a confirmation message:
       jQuery("#exampleModal").modal("hide");
       $conf.html("Merci de votre commande ! Un mail de confirmation vous a été envoyé (pensez à vérifier dans vos courriers indésirable).");
-      
+
       sendMail();
     }, 'json');
     document.getElementById('confirmAlert').style.display = 'block';
-    $("#confirmAlert").fadeTo(5000, 500).slideUp(500, function(){
+    $("#confirmAlert").fadeTo(5000, 500).slideUp(500, function () {
       $("#confirmAlert").alert('close');
     });
     return false;
@@ -195,7 +197,7 @@ $(document).ready(function () {
   //       $("#confirmAlert").alert('close'); 
   //   });
   // }, 5000);
-  
+
 });
 
 function closeAlert() {
@@ -323,7 +325,7 @@ function sendMail() {
     </tbody></table>\
     <!-- /footerBlock -->\
 </center></body></html>'
-  
+
   var emailAdress = document.getElementById("inputEmail").value;
   var lastname = document.getElementById("lastname").value;
   var firstname = document.getElementById("firstname").value;
@@ -331,6 +333,6 @@ function sendMail() {
     emailAdress,
     "Votre commande - Ucrafty.fr",
     body,
-    {token :"9fc2379c-19e3-4774-9114-35549842763e"}
+    { token: "9fc2379c-19e3-4774-9114-35549842763e" }
   );
 };

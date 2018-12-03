@@ -43,18 +43,18 @@
         <!-- Carousel -->
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/Carousel/HOME_LGG_1500x.jpg" alt="Commande du mois">
+                <!-- <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/Carousel/HOME2_LGG_1500x.jpg" alt="Commande du mois">
                     <div class="carousel-caption d-block">
                         <button type="button" class="btn btn-primary btn-buy" data-toggle="modal" data-target="#exampleModal"
                             data-whatever="Décembre" data-type="Acheter">Acheter</button>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="img/Carousel/HOME2_LGG_1500x.jpg" alt="Précommande">
+                </div> -->
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/Carousel/HOME_LGG_1500x.jpg" alt="Précommande">
                     <div class="carousel-caption d-block ">
-                        <!-- <button type="button" class="btn btn-primary btn-buy" data-toggle="modal" data-target="#exampleModal"
-                            data-whatever="Janvier" data-type="Réserver" data-date="15 décembre">Réserver</button> -->
+                        <button type="button" class="btn btn-primary btn-buy" data-toggle="modal" data-target="#exampleModal"
+                            data-whatever="Décembre" data-type="Réserver" data-date="15 décembre">Réserver</button>
                     </div>
                 </div>
             </div>
@@ -106,12 +106,14 @@
             <h4 class="detail-title">Tous les deux mois,</h4>
             <p>
                 une nouvelle box vous est proposée avec un univers différent à chaque fois.
-                Vous y trouvez toujours à l'intérieur de quoi produire plusieurs merveilleux objets à frabriquer vous-même grâce aux conseils et tutoriels réalisés par notre équipe.
+                Vous y trouvez toujours à l'intérieur de quoi produire plusieurs merveilleux objets à frabriquer
+                vous-même grâce aux conseils et tutoriels réalisés par notre équipe.
 
             </p>
             <h4 class="detail-title text-right text-md-left">Une grande communauté,</h4>
             <p class="text-right text-md-left">
-                qui vous proposera à chaque sortie de box des rendez-vous pour venir réaliser votre en box en groupe et ainsi profiter du matériel et des conseils de nos créateurs / designeurs.
+                qui vous proposera à chaque sortie de box des rendez-vous pour venir réaliser votre en box en groupe et
+                ainsi profiter du matériel et des conseils de nos créateurs / designeurs.
                 De plus, retrouvez toutes les photos de nos produits postées par nos abonnés sur notre instagram.
             </p>
             <h4 class="detail-title"> Des tutos,</h4>
@@ -231,12 +233,22 @@
                     <form id="myForm" action="https://script.google.com/macros/s/AKfycbyXKEMcqW460BtZ9_541oxR9Q8Q0s1DQm10zwreyNxUXI9_-Pyi/exec">
                         <div class="form-group">
                             <label for="recipient-name" class="col-form-label">Box du mois :</label>
-                            <input type="text" class="form-control" id="recipient-name" name="mois" readonly>
+                            <!-- <input type="text" class="form-control" id="recipient-name" name="mois" readonly> -->
+                            <select class="form-control" id="month-list" name="mois" onchange="OnMonthChange()">
+                                <option>Décembre</option>
+                                <!-- <option>Janvier</option>
+                                <option>Février</option>
+                                <option>Mars</option>
+                                <option>Avril</option>
+                                <option>Mai</option>
+                                <option>Juin</option> -->
+                            </select>
+
                         </div>
                         <p class="italic"></p>
 
                         <div class="row">
-                            <div class="col-sm-9 text-center" id="imgCommande"><img src="img/box_precedentes/box_mystere.png"
+                            <div class="col-sm-9 text-center" id="imgCommande"><img id="imgBoxMonth" src="img/box_precedentes/box_mystere.png"
                                     width="80%" alt="box"></div>
                             <div class="col-sm-3 text-center form-content" id="quantitypicker">
                                 <label for="exampleFormControlSelect1">Quantité</label>
@@ -284,7 +296,8 @@
                                 <div class="form-check form-content">
                                     <input type="checkbox" id="checkBox_validation" class="form-check-input text"
                                         required>
-                                    <label class="form-check-label" for="exampleCheck2">Je m'engage à verser la somme due à la réception de ma commande </a> </label>
+                                    <label class="form-check-label" for="exampleCheck2">Je m'engage à verser la somme
+                                        due à la réception de ma commande </a> </label>
                                 </div>
                             </div>
 
