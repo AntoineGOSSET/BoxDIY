@@ -23,6 +23,7 @@ html, body {
     padding-left: 0 !important;
     padding-right: 0 !important;
     overflow: hidden;
+    margin-bottom: -10px;
 }
 #logo-title{
     width: 160px;
