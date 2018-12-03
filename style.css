@@ -98,6 +98,9 @@ html, body {
 .card-img-top{
     border-radius: 140px !important;
 }
+.concours-row{
+    background-color: bisque
+}
 
 .title{
     margin-top: 40px;
@@ -423,4 +426,9 @@ h4 {
 
 .card-header{
     background-color: white
+}
+
+.img-full-width{
+    width: 100%;
+    height: auto;
 }
