@@ -13,6 +13,11 @@
     src: url('font/SedgwickAve-Regular.ttf')
 }
 
+@font-face{
+    font-family: 'christmas';
+    src: url('font/christmas.ttf')
+}
+
 html, body {
     overflow-x: hidden;
     margin: 0 !important;
@@ -127,6 +132,17 @@ p.italic{
     top: 70%;
     left: 50%;
 }
+.carousel-text{
+    top: 10% !important;
+    left: 3% !important;
+    /* width: 30%;
+    background-color: rgba(255, 255, 255, 0.6) */
+}
+.carousel-text p{
+    width: 25%;
+    background-color: rgba(200, 200, 200, 0.4)
+}
+
 
 .btn-buy{
     width: 180px;
@@ -219,7 +235,11 @@ footer a:hover
 .garantie{
     padding: 20px
 }
+.carousel-text-content{
+padding: 1%;
+border-radius: 4%
 
+}
 /* =================================== */
 
 .appear{
@@ -231,6 +251,11 @@ footer a:hover
 .hideme{
     opacity:0;
 }
+#christmas-title{
+    font-family: christmas !important;
+    font-weight: bold;
+    font-size: 4rem
+}
 @media screen and (min-width: 992px) {
     .navbar-nav{
         transform: translateX(-50%);
@@ -238,8 +263,23 @@ footer a:hover
         position: absolute;
     }
 }
+
+
+@media screen and (min-width: 1100px) {
+    .carousel-text-content{
+    margin-top: 3%;
+    width: 30%
+    }
+}
+
+
 @media screen and (max-width: 992px) {
 
+    #christmas-title{
+        font-family: christmas !important;
+        font-weight: bold;
+        font-size: 3rem
+    }
     .nav-item{
         padding-left: 20px !important;
     }
@@ -253,6 +293,10 @@ footer a:hover
         filter: blur(0px) !important
     }
 
+    .carousel-text p{
+        display: none
+    }
+
     /* #checkBox_validation{
         margin-left: 1px
     } */
@@ -260,8 +304,13 @@ footer a:hover
 @media screen and (max-width: 576px) {
     .carousel-caption {
         top: 50%;
+        margin-bottom: 19px;
         right: 15%;
         left: 15%;
+    }
+
+    .carousel-text{
+        display: none
     }
 
 
@@ -433,3 +482,4 @@ h4 {
     width: 100%;
     height: auto;
 }
+

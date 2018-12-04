@@ -115,13 +115,13 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   if (datedispo) {
     modal.find('.modal-body p').text('Disponnible à partir du ' + datedispo)
   }
-  modal.find('img').attr('src', 'img/box_precedentes/' + recipient + '.jpg')
+  modal.find('img').attr('src', 'img/box/' + recipient + '/visuel.jpg')
 })
 
 function OnMonthChange() {
   var x = document.getElementById("month-list").value;
   console.log('img/box_precedentes/' + x + '.jpg')
-  document.getElementById("imgBoxMonth").src = ('img/box_precedentes/' + x + '.jpg')
+  document.getElementById("imgBoxMonth").src = ('img/box/' + x + '/visuel.jpg')
 }
 /* =================================== */
 /* Calcul du prix total */
