@@ -23,6 +23,7 @@ html, body {
     padding-left: 0 !important;
     padding-right: 0 !important;
     overflow: hidden;
+    margin-bottom: -10px;
 }
 #logo-title{
     width: 160px;
@@ -126,6 +127,19 @@ p.italic{
     top: 70%;
     left: 50%;
 }
+.carousel-text{
+    top: 10% !important;
+    left: 5% !important;
+    /* width: 30%;
+    background-color: rgba(255, 255, 255, 0.6) */
+}
+.carousel-text p{
+    width: 25%;
+    background-color: rgba(200, 200, 200, 0.4)
+}
+/* .carousel-text-content{
+    background-color: rgba(255, 255, 255, 0.4)
+} */
 
 .btn-buy{
     width: 180px;
@@ -252,6 +266,10 @@ footer a:hover
         filter: blur(0px) !important
     }
 
+    .carousel-text p{
+        display: none
+    }
+
     /* #checkBox_validation{
         margin-left: 1px
     } */
@@ -259,8 +277,13 @@ footer a:hover
 @media screen and (max-width: 576px) {
     .carousel-caption {
         top: 50%;
+        margin-bottom: 19px;
         right: 15%;
         left: 15%;
+    }
+
+    .carousel-text{
+        display: none
     }
 
 
