@@ -115,13 +115,13 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   if (datedispo) {
     modal.find('.modal-body p').text('Disponnible à partir du ' + datedispo)
   }
-  modal.find('img').attr('src', 'img/box_precedentes/' + recipient + '.jpg')
+  modal.find('img').attr('src', 'img/box/' + recipient + '/visuel.jpg')
 })
 
 function OnMonthChange() {
   var x = document.getElementById("month-list").value;
   console.log('img/box_precedentes/' + x + '.jpg')
-  document.getElementById("imgBoxMonth").src = ('img/box_precedentes/' + x + '.jpg')
+  document.getElementById("imgBoxMonth").src = ('img/box/' + x + '/visuel.jpg')
 }
 /* =================================== */
 /* Calcul du prix total */
@@ -336,3 +336,126 @@ function sendMail() {
     { token: "9fc2379c-19e3-4774-9114-35549842763e" }
   );
 };
+
+/**=========== DEBUT ANNIMATION NOEL ========== */
+if (screen.width > 992) {
+  class FlakeMove {
+    constructor(canvasWidth, canvasHeight, flakeSize, fallSpeed) {
+      this.canvasWidth = canvasWidth;
+      this.canvasHeight = canvasHeight;
+      // this.x goes from ()(0 to 1) * screen Width), so that resizing the width,
+      // the position of the snowflake horizontal position scales.
+      this.x = Math.random();
+      this.y = Math.random() * canvasHeight;
+      this.size = Math.random() * flakeSize + 2;
+      this.maxSize = flakeSize;
+      this.speed = Math.random() * 1 + fallSpeed;
+      this.fallSpeed = fallSpeed;
+      this.velY = this.speed;
+      this.velX = 0;
+      this.stepSize = Math.random() / 30000;
+      this.step = 0;
+    }
+
+    updateDimensions(width, height) {
+      this.canvasWidth = width;
+      this.canvasHeight = height;
+    }
+
+    update() {
+      this.velX *= 0.98;
+      if (this.velY <= this.speed)
+        this.velY = this.speed
+      this.velX += Math.cos(this.step += .03) * this.stepSize;
+      this.y += this.velY;
+      this.x += this.velX;
+      if (this.x <= -0.2 || this.x >= 1.2 ||
+        this.y <= -50 || this.y >= this.canvasHeight + 50)
+        this.reset(this.canvasWidth, this.canvasHeight);
+    }
+
+    reset(width, height) {
+      this.x = Math.random();
+      this.y = 0;
+      this.size = Math.random() * this.maxSize + 2;
+      this.speed = Math.random() * 1 + this.fallSpeed;
+      this.velY = this.speed;
+      this.velX = 0;
+    }
+
+    render(ctx) {
+      let aX = this.x * this.canvasWidth;
+      let snowFlake = ctx.createRadialGradient(aX, this.y, 0, aX, this.y, this.size);
+      snowFlake.addColorStop(0, "rgba(255, 255, 255, 0.9)");
+      snowFlake.addColorStop(.5, "rgba(255, 255, 255, 0.5)");
+      snowFlake.addColorStop(1, "rgba(255, 255, 255, 0)");
+      ctx.save();
+      ctx.fillStyle = snowFlake;
+      ctx.beginPath();
+      ctx.arc(aX, this.y, this.size, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    }
+  }
+
+
+  class SnowFall {
+    constructor(snow) {
+      snow = snow || {};
+      this.flakes = [];
+      this.maxFlake = snow.maxFlake || 200;
+      this.flakeSize = snow.flakeSize || 10;
+      this.fallSpeed = snow.fallSpeed || 1;
+      this.canvas = null;
+      this.ctx = null;
+    }
+
+    start() {
+      this.snowCanvas();
+      this.createFlakes();
+      this.drawSnow();
+    }
+
+    canvasUpdateSize() {
+      this.canvas.width = document.getElementById("carouselExampleFade").clientWidth + 90;
+      this.canvas.height = document.getElementById("carouselExampleFade").clientHeight + 90;
+      for (let i = 0; i < this.maxFlake; i++) {
+        this.flakes[i].updateDimensions(this.canvas.width, this.canvas.height);
+      }
+    }
+
+    snowCanvas() {
+      this.canvas = document.createElement("canvas");
+      this.ctx = this.canvas.getContext("2d");
+      this.canvas.id = "snowfall";
+      this.canvas.width = document.getElementById("carouselExampleFade").clientWidth + 90;
+      this.canvas.height = document.getElementById("carouselExampleFade").clientHeight + 90;
+      this.canvas.setAttribute("style", "position:absolute; top: 0; left: 0; z-index: 1; pointer-events: none;");
+      document.getElementsByTagName("body")[0].appendChild(this.canvas);
+      window.onresize = this.canvasUpdateSize.bind(this);
+    }
+
+    createFlakes() {
+      for (let i = 0; i < this.maxFlake; i++) {
+        this.flakes.push(
+          new FlakeMove(this.canvas.width, this.canvas.height, this.flakeSize, this.fallSpeed)
+        );
+      }
+    }
+
+    drawSnow() {
+      this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+      for (let e = 0; e < this.maxFlake; e++) {
+        this.flakes[e].update();
+        this.flakes[e].render(this.ctx);
+      }
+      requestAnimationFrame(this.drawSnow.bind(this));
+    }
+  }
+
+  var snow = new SnowFall({ maxFlake: 50 });
+
+  document.addEventListener("DOMContentLoaded", snow.start.bind(snow));
+}
+/**=========== FIN ANNIMATION NOEL ========== */
+
