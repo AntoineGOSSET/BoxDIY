@@ -18,6 +18,10 @@
     src: url('font/christmas.ttf')
 }
 
+@font-face{
+    font-family: 'geek';
+    src: url('font/VIPESR.TTF')
+}
 html, body {
     overflow-x: hidden;
     margin: 0 !important;
@@ -37,7 +41,8 @@ html, body {
     transition: 0.3s;
 }
 .btn-primary{
-    background-color:  #0772b8
+    background-color:  #0772b8;
+    border-radius: 0 !important;
 }
 #main-title{
     font-family: amethyst;
@@ -91,7 +96,7 @@ html, body {
 }
 
 .detail-title{
-    padding-top: 10px;
+    padding-top: 10%;
     width: 100%;
 }
 .card {
@@ -134,12 +139,12 @@ p.italic{
 }
 .carousel-text{
     top: 10% !important;
-    left: 3% !important;
+    left: 5% !important;
     /* width: 30%;
     background-color: rgba(255, 255, 255, 0.6) */
 }
 .carousel-text p{
-    width: 35%;
+    width: 32%;
     background-color: rgba(200, 200, 200, 0.4)
 }
 
@@ -152,7 +157,7 @@ p.italic{
     text-align: center;
     width: 100%;
     padding-bottom: 20px;
-    padding-top: 10px;
+    padding-top: 12%;
 }
 
 h1{
@@ -255,6 +260,11 @@ border-radius: 4%
     font-family: christmas !important;
     font-weight: bold;
     font-size: 4rem
+}
+
+.geek-title{
+    font-family: geek !important;
+    font-size: 3rem
 }
 @media screen and (min-width: 992px) {
     .navbar-nav{
@@ -451,6 +461,14 @@ footer a{
     height: 200px;
     padding: 0;
 }
+.monthCard{
+    padding: .75rem 1.25rem;
+}
+.monthImg{
+    border-radius: 15%;
+    max-width: 90%;
+    padding: 0;
+}
 
 .imgTuto{
     border-radius: 5%
@@ -482,4 +500,7 @@ h4 {
     width: 100%;
     height: auto;
 }
+
+
+
 

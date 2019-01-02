@@ -337,7 +337,7 @@ function sendMail() {
   );
 };
 
-/**=========== DEBUT ANNIMATION NOEL ========== */
+/**=========== DEBUT ANNIMATION NOEL ==========
 if (screen.width > 992) {
   class FlakeMove {
     constructor(canvasWidth, canvasHeight, flakeSize, fallSpeed) {
