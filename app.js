@@ -23,7 +23,7 @@ $('#oldbox .carousel .carousel-item').each(function () {
 /* Mouse over pour le carousel */
 
 function blurImg(x) {
-  x.style.filter = "blur(6px)";
+  x.style.filter = "blur(3px)";
 }
 
 function normalImg(x) {
